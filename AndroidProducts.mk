@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixelage_guamp.mk
+    $(LOCAL_DIR)/aosp_guamp.mk

@@ -47,7 +47,7 @@ PRODUCT_PACKAGES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-pixelage
+    $(LOCAL_PATH)/overlay-custom
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -72,9 +72,6 @@ PRODUCT_COPY_FILES += \
 $(foreach DEVICE_SKU, $(DEVICE_COMPASS_SKUS), \
     $(LOCAL_PATH)/permissions/unavail.android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.sensor.compass.xml)
 
-#Signing
-$(call inherit-product, vendor/pixelage-priv/config/common.mk)
-
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
@@ -82,6 +79,9 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+
+# Signing
+$(call inherit-product, vendor/pixelos-priv/config/common.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

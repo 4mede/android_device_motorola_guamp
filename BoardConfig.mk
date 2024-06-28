@@ -18,6 +18,7 @@ TARGET_SCREEN_DENSITY := 280
 # HIDL
 ODM_MANIFEST_SKUS += b c d dc dn dnc fb fc fd fdc fdn fdnc fn fnc n nc
 ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/sku/manifest_b.xml
+<<<<<<< HEAD
 ODM_MANIFEST_C_FILES := $(DEVICE_PATH)/sku/manifest_c.xml
 ODM_MANIFEST_D_FILES := $(DEVICE_PATH)/sku/manifest_d.xml
 ODM_MANIFEST_DC_FILES := $(DEVICE_PATH)/sku/manifest_dc.xml
@@ -33,6 +34,7 @@ ODM_MANIFEST_FN_FILES := $(DEVICE_PATH)/sku/manifest_fn.xml
 ODM_MANIFEST_FNC_FILES := $(DEVICE_PATH)/sku/manifest_fnc.xml
 ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/sku/manifest_n.xml
 ODM_MANIFEST_NC_FILES := $(DEVICE_PATH)/sku/manifest_nc.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/aicp/config/device_framework_matrix.xml
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2

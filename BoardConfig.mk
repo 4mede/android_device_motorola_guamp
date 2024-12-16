@@ -63,5 +63,8 @@ VENDOR_SECURITY_PATCH := 2022-09-01
 # Verified Boot
 BOARD_AVB_ROLLBACK_INDEX := 20
 
+# Allow Duplicates
+BUILD_BROKEN_DUP_RULES := true
+
 # Inherit from the proprietary version
 include vendor/motorola/guamp/BoardConfigVendor.mk

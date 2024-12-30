@@ -12,12 +12,12 @@ $(call inherit-product, device/motorola/guamp/device.mk)
 
 # Inherit some common Pixelage stuff.
 $(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
--include vendor/pixelage-priv/keys/keys.mk
+
 # Pixelage
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_guamp
+PRODUCT_NAME := pixelage_guamp
 PRODUCT_DEVICE := guamp
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g(9)

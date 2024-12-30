@@ -48,6 +48,8 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 50616843776
 BOARD_SUPER_PARTITION_SIZE := 9763291136
 BOARD_MOTO_DYNAMIC_PARTITIONS_SIZE := 4877451264 # (BOARD_SUPER_PARTITION_SIZE / 2) - 4MB
 
+BOARD_PRODUCTIMAGE_MINIMAL_PARTITION_RESERVED_SIZE := true
+
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
@@ -62,6 +64,9 @@ VENDOR_SECURITY_PATCH := 2022-09-01
 
 # Verified Boot
 BOARD_AVB_ROLLBACK_INDEX := 20
+
+#Include Vendor-priv
+-include vendor/pixelage-priv/keys/config.mk
 
 # Inherit from the proprietary version
 include vendor/motorola/guamp/BoardConfigVendor.mk

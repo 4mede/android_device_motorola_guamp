@@ -28,3 +28,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="guamp_retail-user 11 RPXS31.Q2-58-17-7-3 ad9c24 release-keys" \
     BuildFingerprint=motorola/guamp_retail/guamp:11/RPXS31.Q2-58-17-7-3/ad9c24:user/release-keys \
     DeviceProduct=guamp_retail
+
+# Lineage Flags
+TARGET_EXCLUDES_AUDIOFX := true

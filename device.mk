@@ -80,7 +80,7 @@ $(call inherit-product, vendor/cr/signing/keys/keys.mk)
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
 # GApps
-include vendor/gapps/arm64/arm64-vendor.mk
+$(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

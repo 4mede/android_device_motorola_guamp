@@ -10,7 +10,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/motorola/guamp/device.mk)
 
-<<<<<<< HEAD:pixelage_guamp.mk
 # Inherit some common Pixelage stuff.
 $(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 

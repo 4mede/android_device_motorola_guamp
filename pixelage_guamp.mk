@@ -14,7 +14,7 @@ $(call inherit-product, device/motorola/guamp/device.mk)
 $(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 
 # Boot animation
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES := 720
 
 # Pixelage
 TARGET_FACE_UNLOCK_SUPPORTED := true

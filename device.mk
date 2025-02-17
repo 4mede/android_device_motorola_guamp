@@ -80,10 +80,6 @@ $(call inherit-product, vendor/cr/signing/keys/keys.mk)
 # Prebuilts
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
 
-# RemovePackages
-PRODUCT_PACKAGES += \
-    RemovePackages \
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

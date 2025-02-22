@@ -18,7 +18,6 @@ TARGET_SCREEN_DENSITY := 280
 # HIDL
 ODM_MANIFEST_SKUS += b c d dc dn dnc fb fc fd fdc fdn fdnc fn fnc n nc
 ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/sku/manifest_b.xml
-<<<<<<< HEAD
 ODM_MANIFEST_C_FILES := $(DEVICE_PATH)/sku/manifest_c.xml
 ODM_MANIFEST_D_FILES := $(DEVICE_PATH)/sku/manifest_d.xml
 ODM_MANIFEST_DC_FILES := $(DEVICE_PATH)/sku/manifest_dc.xml

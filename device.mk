@@ -4,7 +4,7 @@
 #
 
 # Inherit from sm6225-common
-$(call inherit-product, device/motorola/sm6225-common/bengal.mk)
+$(call inherit-product, device/motorola/sm6225-common/common.mk)
 
 # A/B
 AB_OTA_PARTITIONS += \
@@ -32,7 +32,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.bengal
+    android.hardware.light-service.lineage
 
 # Moto Camera 2
 TARGET_MOTCAMERA2 := whitney

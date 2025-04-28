@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/guamp/device.mk)
 
 # Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, ${CUSTOM_PRODUCT_DIR}/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Inherit from ViPER4AndroidFX

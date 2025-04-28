@@ -35,10 +35,10 @@ PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
 
 # Moto Camera 2
-TARGET_MOTCAMERA2 := whitney
-TARGET_USES_MOTCAMERA2 := true
+#TARGET_MOTCAMERA2 := whitney
+#TARGET_USES_MOTCAMERA2 := true
 
-$(call inherit-product, vendor/motorola/MotCamera2/motcamera2.mk)
+#$(call inherit-product, vendor/motorola/MotCamera2/motcamera2.mk)
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -81,7 +81,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 # Signing
-$(call inherit-product, vendor/pixelos-priv/config/common.mk)
+$(call inherit-product, vendor/halogen-priv/config/common.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

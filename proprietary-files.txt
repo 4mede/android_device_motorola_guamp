@@ -171,6 +171,9 @@ vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
 vendor/lib64/libpn557_fw.so
 
+# OEM
+vendor/etc/vhw.xml
+
 # Sensors configs
 vendor/etc/sensors/config/bengal_default_sensors.json
 vendor/etc/sensors/config/bengal_dynamic_sensors.json

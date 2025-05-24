@@ -12,10 +12,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/guamp/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+TARGET_BOOT_ANIMATION_RES := 720
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_guamp
+PRODUCT_NAME := aosp_guamp
 PRODUCT_DEVICE := guamp
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g(9)

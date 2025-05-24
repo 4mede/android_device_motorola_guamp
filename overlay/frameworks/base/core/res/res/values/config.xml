@@ -214,8 +214,6 @@
         <item>43</item>
     </integer-array>
 
-<<<<<<< HEAD
-=======
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
 
@@ -224,5 +222,4 @@
 
     <!-- Enable system navigation keys. -->
     <bool name="config_supportSystemNavigationKeys">true</bool>
->>>>>>> 7020a60 (guamp: Enable fingerprint swipe gesture)
 </resources>

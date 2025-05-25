@@ -248,7 +248,6 @@ vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
 vendor/etc/thermal-engine-guamp.conf
 vendor/etc/thermal-engine.conf
-vendor/etc/thermal-engine-caprip.conf
 -vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 

@@ -38,8 +38,8 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service
 
 # Keylayouts
-PRODUCT_PACKAGES += \
-    gpio-keys.kl
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_OUT_VENDOR)/usr/keylayout
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \

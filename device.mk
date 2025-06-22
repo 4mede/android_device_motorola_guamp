@@ -46,6 +46,13 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+PRODUCT_PACKAGES += \
+    FrameworksResDeviceRetin \
+    FrameworksResDeviceXT2083-4 \
+    WifiResDevice \
+    WifiResDeviceRetin \
+    WifiResDeviceXT2083-4
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \

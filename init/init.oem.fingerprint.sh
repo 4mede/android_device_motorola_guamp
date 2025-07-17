@@ -28,8 +28,6 @@ PROP_FPS_IDENT=vendor.hw.fps.ident
 MAX_TIMES=20
 
 function ident_fps {
-    log "- install Goodix driver"
-    insmod /vendor/lib/modules/goodix_fod_mmi.ko
     sleep 1
     log "- identify Goodix sensor"
     setprop $PROP_FPS_IDENT ""
@@ -45,14 +43,10 @@ function ident_fps {
             return 0
         elif [ $ident_status == $FPS_VENDOR_NONE ]; then
             log "fail"
-            log "- unload Goodix driver"
-            rmmod goodix_fod_mmi
             break
         fi
     done
 
-    log "- install FPC driver"
-    insmod /vendor/lib/modules/fpc1020_mmi.ko
     echo $FPS_VENDOR_FPC > $persist_fps_id
     return 0
 }
@@ -67,14 +61,10 @@ log "FPS vendor: $fps_vendor"
 
 
 if [ $fps_vendor == $FPS_VENDOR_GOODIX ]; then
-    log "- install Goodix driver"
-    insmod /vendor/lib/modules/goodix_fod_mmi.ko
     return $?
 fi
 
 if [ $fps_vendor == $FPS_VENDOR_FPC ]; then
-    log "- install FPC driver"
-    insmod /vendor/lib/modules/fpc1020_mmi.ko
     return $?
 fi
 

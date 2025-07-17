@@ -79,12 +79,8 @@ fi
 
 if [ $fps == $fps_vendor2 ]; then
     if [ $fps == $FPS_VENDOR_FPC ]; then
-        rmmod fpc1020_mmi
-        insmod /vendor/lib/modules/goodix_fod_mmi.ko
         fps=$FPS_VENDOR_GOODIX
     else
-        rmmod goodix_fod_mmi
-        insmod /vendor/lib/modules/fpc1020_mmi.ko
         fps=$FPS_VENDOR_FPC
     fi
     log "- update FPS vendor"

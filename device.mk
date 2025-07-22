@@ -28,6 +28,10 @@ PRODUCT_PACKAGES += \
     init.oem.fingerprint2.sh \
     init.mmi.overlay.rc \
     init.recovery.touch.rc
+    
+# Keylayouts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_OUT_VENDOR)/usr/keylayout
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -36,10 +40,7 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service
-
-# Keylayouts
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_OUT_VENDOR)/usr/keylayout
+    android.hardware.nfc@1.2.vendor
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
@@ -75,6 +76,10 @@ $(foreach DEVICE_SKU, $(DEVICE_NFC_SKUS), \
 PRODUCT_COPY_FILES += \
 $(foreach DEVICE_SKU, $(DEVICE_COMPASS_SKUS), \
     $(LOCAL_PATH)/permissions/unavail.android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.sensor.compass.xml)
+    
+# QTI
+TARGET_COMMON_QTI_COMPONENTS += \
+    nfc
 
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 29

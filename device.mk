@@ -44,7 +44,7 @@ $(call inherit-product, vendor/motorola/MotCamera2/motcamera2.mk)
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service
+    android.hardware.nfc@1.2-service \
     android.hardware.nfc@1.2.vendor
 
 # Overlay

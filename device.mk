@@ -28,6 +28,9 @@ PRODUCT_PACKAGES += \
     init.oem.fingerprint2.sh \
     init.mmi.overlay.rc
     
+# Kernel
+KERNEL_PREBUILT_DIR := $(LOCAL_PATH)-kernel
+    
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_OUT_VENDOR)/usr/keylayout

@@ -35,7 +35,7 @@ ODM_MANIFEST_NC_FILES := $(DEVICE_PATH)/sku/manifest_nc.xml
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
-TARGET_KERNEL_CONFIG += vendor/ext_config/guamp-default.config
+TARGET_KERNEL_CONFIG += guamp_defconfig
 
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 104857600
